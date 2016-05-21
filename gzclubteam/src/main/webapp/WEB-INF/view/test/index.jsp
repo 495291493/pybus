@@ -104,6 +104,14 @@ transform: rotate(-360deg);
 <a href="#"> 
 <img border="0" src="http://www.zzsck.org/wp-content/uploads/2013/10/yahoo.png" /></a> 
 </p>
-	
+
+<div>
+	<label for="userName">用户名：</label>
+	<input type="text" id="userName" name="userName" />
+</div>
+<div>
+	<input type="button" value="ajax提交"  id="submitBtn" name="submitBtn"/>
+</div>
 </body>
 </html>
+

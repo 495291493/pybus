@@ -1,11 +1,15 @@
 package com.gzclubteam.controller;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.gzclubteam.model.Test;
@@ -36,5 +40,17 @@ public class TestController {
 				.addObject("test", tt);
 	}
 	
+	
+	/**
+	 * 获取一个值
+	 */
+	@RequestMapping("/getValue")
+	@ResponseBody
+	public Map<String, String> getValue(HttpServletRequest request, HttpServletResponse response){
+		Map<String, String> data = new LinkedHashMap<String, String>();
+		data.put("result", "0");
+		data.put("message", request.getParameter("userName"));
+		return data;
+	}
 
 }
