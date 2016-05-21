@@ -13,7 +13,7 @@ import com.gzclubteam.service.TestService;
 import com.mysql.jdbc.StringUtils;
 
 @Controller
-@RequestMapping("/test/")
+@RequestMapping("/test")
 public class TestController {
 	@Resource
 	private TestService testService;
@@ -24,7 +24,7 @@ public class TestController {
 	 * @param response
 	 * @return
 	 */
-	@RequestMapping("index")
+	@RequestMapping("/index")
 	public ModelAndView index(HttpServletRequest request, HttpServletResponse response){
 		String id = request.getParameter("id");
 		Integer i  = new Integer(1);
