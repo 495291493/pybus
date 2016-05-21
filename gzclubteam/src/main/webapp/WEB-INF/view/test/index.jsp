@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<jsp:include page="${ctx}/common/common.jsp" flush="true"></jsp:include>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,7 +11,6 @@
 </style>
 </head>
 <body>
-  <jsp:include page="${ctx}/common/common.jsp" flush="true"></jsp:include>
   <div class="access_method">
     access：  <a href="http://localhost:8080/gzclubteam/test/index.action">http://localhost:8080/gzclubteam/test/index.action</a>
   </div>
@@ -114,4 +114,5 @@ transform: rotate(-360deg);
 </div>
 </body>
 </html>
+
 

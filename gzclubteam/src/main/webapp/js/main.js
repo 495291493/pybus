@@ -1,30 +1,27 @@
-var ctx = "${pageContext.request.contextPath}";
 $(function(){
 	//测试
 	$("#submitBtn").click(function(){
-		alert("${ctx}");
-		alert("${ctx}/test/getValue.action");
 		var userName = $("#userName").val(); 
 		 $.ajax({
 	             type : "POST",
-	             url : "${ctx}/test/getValue.action",
+	             url : ctx + "/test/getValue.action",
 	             data : {userName : userName},
 	             dataType : "json",
 	             success : function(data){
+	            	 debugger;
 	            	 var d = data;
-	            	 if(null == data){
+	            	 if(null == d){
 	            		 alert('返回数据为空！');
 	            		 return;
 	            	 }
-	            	 var json = eval ("(" + d + ")"); 
-	            	 var result = json.result;
-	            	 var message = json.message;
+//	            	 var json = eval("(" + d + ")"); 
+	            	 var result = d.result;
+	            	 var message = d.message;
 	            	 if(result == 0){
 	            		 alert(message);
 	            	 }
 	             },
 	             error : function(){
-	            	 
 	             }
 	    });
 	});
