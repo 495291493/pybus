@@ -10,13 +10,15 @@
 </style>
 </head>
 <body>
-  <jsp:include page="../common/common.jsp" flush="true"></jsp:include>
+  <jsp:include page="${ctx}/common/common.jsp" flush="true"></jsp:include>
   <div class="access_method">
     access：  <a href="http://localhost:8080/gzclubteam/test/index.action">http://localhost:8080/gzclubteam/test/index.action</a>
   </div>
   <div class="access_content">${test.id }</div>
   <div class="access_content">${test.name }</div>
   <div class="access_content">${test.age }</div>
-  <button type="button" class="btn btn-default">（默认样式）Default</button>
+   <button type="button" class="btn btn-default">（默认样式）Default</button>
+   <!-- Indicates a successful or positive action -->
+	<button type="button" class="btn btn-success">（成功）Success</button>
 </body>
 </html>

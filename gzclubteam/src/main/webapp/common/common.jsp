@@ -2,6 +2,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!-- el全局常量设置 -->
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
+
 <!-- css引入 -->
 <link rel="stylesheet" type="text/css" href="${ctx }/css/bootstrap.css?serno=110">
 <link rel="stylesheet" type="text/css" href="${ctx }/css/main.css?serno=111">
