@@ -37,7 +37,7 @@ public class AttachFilter implements Filter {
 	public void init(FilterConfig fconfig) throws ServletException {
 		this.fconfig = fconfig;
 		logger.info("AttachFilter inited ...");
-		logger.info("AttachFilter createTime：" + fconfig.getInitParameter("creatTime"));
+		logger.info("AttachFilter createTime：" + this.fconfig.getInitParameter("creatTime"));
 	}
 
 }

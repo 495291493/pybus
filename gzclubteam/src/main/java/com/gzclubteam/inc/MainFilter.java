@@ -40,7 +40,7 @@ public class MainFilter implements Filter{
 	public void init(FilterConfig fconfig) throws ServletException {
 		this.fconfig = fconfig;
 		logger.info("MainFilter inited ...");
-		logger.info("MainFilter createTime：" + fconfig.getInitParameter("creatTime"));
+		logger.info("MainFilter createTime：" + this.fconfig.getInitParameter("creatTime"));
 	}
 
 }
