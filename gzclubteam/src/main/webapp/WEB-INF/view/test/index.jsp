@@ -11,14 +11,12 @@
 </style>
 </head>
 <body>
-  <div style="position: relative; z-index:1;">
-    <div id="pro" style="z-index: 100;position: static; top:0px;left:0px;"></div>
-  </div>
+  <div id="pro"></div>
   <script>
       $("#pro").ProgressBarWars({porcentage:100,color:"#8BC34A"});
   </script>
   
-  
+  <div class="main">
   <div class="access_method">
     access：  <a href="http://localhost:8080/gzclubteam/test/index.action">http://localhost:8080/gzclubteam/test/index.action</a>
   </div>
@@ -28,7 +26,7 @@
    <button type="button" class="btn btn-default">（默认样式）Default</button>
    <!-- Indicates a successful or positive action -->
 	<button type="button" class="btn btn-success">（成功）Success</button>
-	
+	</div>
 	<style> 
 p#socialicons img{ /* 1st set of icons. Rotate them 360deg onmouseover and out */ 
 -moz-transition: all 0.8s ease-in-out; 

@@ -23,8 +23,8 @@ $.fn.extend({ProgressBarWars: function(options) {
 						    options.estilo="color"+styleUnique;
 					}
 
-					$(ProgressBarWars).before(styleStr);
-					$(ProgressBarWars).append('<span style="z-index: 100; width:'+options.tamanio+';"><span class="'+options.estilo+'" style="height: '+options.proHeight+';"  id="bar'+theidProgressBarWars+'"></span></span>');
+					$(ProgressBarWars).before(styleStr);    
+					$(ProgressBarWars).append('<span style="z-index: 100; width:'+options.tamanio+';"><span class="'+options.estilo+'" style="position: fixed; top: 0;height: '+options.proHeight+';"  id="bar'+theidProgressBarWars+'"></span></span>');
 					$("#bar"+theidProgressBarWars).animate({width: options.porcentage+"%"}, options.speed).fadeOut("slow");
 			 return this;			 
     	}
