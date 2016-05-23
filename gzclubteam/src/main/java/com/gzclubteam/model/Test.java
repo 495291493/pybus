@@ -1,13 +1,16 @@
 package com.gzclubteam.model;
 
-public class Test {
+import java.io.Serializable;
+
+public class Test extends BaseBean implements Serializable{
     private Integer id;
 
     private String name;
 
     private Integer age;
+    
 
-    public Integer getId() {
+	public Integer getId() {
         return id;
     }
 

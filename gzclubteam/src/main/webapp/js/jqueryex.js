@@ -3,14 +3,14 @@
  * 1.ProgressBarWars 进度条
  */
 $.fn.extend({ProgressBarWars: function(options) {
-					var ProgressBarWars=this;
-					var theidProgressBarWars=$(ProgressBarWars).attr("id");
+					var ProgressBarWars = this;
+					var theidProgressBarWars = $(ProgressBarWars).attr("id");
 					var styleUnique = Date.now();
-                    var styleStr="";
+                    var styleStr = "";
 					
 					defaults = {
 						porcentage : 100,
-						speed : 1000,
+						speed : 2000,
 						color : "",
 						estilo : "yoda",
 						tamanio : "30%",
@@ -25,11 +25,7 @@ $.fn.extend({ProgressBarWars: function(options) {
 
 					$(ProgressBarWars).before(styleStr);
 					$(ProgressBarWars).append('<span style="width:'+options.tamanio+';"><span class="'+options.estilo+'" style="height: '+options.proHeight+';"  id="bar'+theidProgressBarWars+'"></span></span>');
-					$("#bar"+theidProgressBarWars).animate({width: options.porcentage+"%"}, options.speed);
-					
-					this.mover = function(ntamanio) {
-						$("#bar"+$(this).attr("id")).animate({width:ntamanio+"%"}, options.speed);
-					};
-			return this;			 
+					$("#bar"+theidProgressBarWars).animate({width: options.porcentage+"%"}, options.speed).fadeOut("slow");
+			 return this;			 
     	}
 });
