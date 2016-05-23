@@ -11,4 +11,5 @@
 <!-- js引入 -->
 <script src="${ctx }/js/jquery-1.12.4.min.js?serno=112"></script>
 <script src="${ctx }/js/bootstrap.min.js?serno=113"></script>
-<script src="${ctx }/js/main.js?serno=114"></script>
+<script src="${ctx }/js/jqueryex.js?serno=114"></script>
+<script src="${ctx }/js/main.js?serno=115"></script>
