@@ -13,7 +13,7 @@
 <body>
   <div id="pro"></div>
   <script>
-      $("#pro").ProgressBarWars({porcentaje:100,color:"#8BC34A"});
+      $("#pro").ProgressBarWars({porcentage:100,color:"#8BC34A"});
   </script>
   
   

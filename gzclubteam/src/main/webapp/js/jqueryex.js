@@ -9,12 +9,12 @@ $.fn.extend({ProgressBarWars: function(options) {
                     var styleStr="";
 					
 					defaults = {
-						porcentaje:"100",
-						speed:1000,
-						color:"",
-						estilo:"yoda",
-						tamanio:"30%",
-						proHeight:"3px"
+						porcentage : 100,
+						speed : 1000,
+						color : "",
+						estilo : "yoda",
+						tamanio : "30%",
+						proHeight : "3px"
 					}
 					
 					var options = $.extend({}, defaults, options);
@@ -25,7 +25,7 @@ $.fn.extend({ProgressBarWars: function(options) {
 
 					$(ProgressBarWars).before(styleStr);
 					$(ProgressBarWars).append('<span style="width:'+options.tamanio+';"><span class="'+options.estilo+'" style="height: '+options.proHeight+';"  id="bar'+theidProgressBarWars+'"></span></span>');
-					$("#bar"+theidProgressBarWars).animate({width: options.porcentaje+"%"},options.speed);
+					$("#bar"+theidProgressBarWars).animate({width: options.porcentage+"%"}, options.speed);
 					
 					this.mover = function(ntamanio) {
 						$("#bar"+$(this).attr("id")).animate({width:ntamanio+"%"}, options.speed);

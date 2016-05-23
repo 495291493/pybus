@@ -30,10 +30,12 @@ public class MainFilter implements Filter{
 	@Override
 	public void doFilter(ServletRequest req, ServletResponse resp, FilterChain fchain)
 			throws IOException, ServletException {
-		
+		long startTime = System.currentTimeMillis();
 		logger.info("MainFilter before ...");
 		fchain.doFilter(req, resp);
 		logger.info("MainFilter after ...");
+		long endTime = System.currentTimeMillis();
+		logger.info("MainFilter run cost : "+(endTime - startTime)+"(ms)");
 	}
 
 	@Override
