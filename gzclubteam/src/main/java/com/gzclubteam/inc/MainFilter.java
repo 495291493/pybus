@@ -32,6 +32,7 @@ public class MainFilter implements Filter{
 			throws IOException, ServletException {
 		long startTime = System.currentTimeMillis();
 		logger.info("MainFilter before ...");
+		
 		fchain.doFilter(req, resp);
 		logger.info("MainFilter after ...");
 		long endTime = System.currentTimeMillis();

@@ -15,6 +15,9 @@ public class BaseBean implements Serializable {
 	public String updateIp;
 	public String updater;
 	
+	/**
+	 * 基类实体处理
+	 */
 	public BaseBean() {
 		super();
 		

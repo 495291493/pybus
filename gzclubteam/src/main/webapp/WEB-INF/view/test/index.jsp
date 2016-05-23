@@ -11,7 +11,9 @@
 </style>
 </head>
 <body>
-  <div id="pro"></div>
+  <div style="position: relative; z-index:1;">
+    <div id="pro" style="z-index: 100;position: static; top:0px;left:0px;"></div>
+  </div>
   <script>
       $("#pro").ProgressBarWars({porcentage:100,color:"#8BC34A"});
   </script>
