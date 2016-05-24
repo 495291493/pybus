@@ -118,6 +118,15 @@ transform: rotate(-360deg);
 <div>
 	<input type="button" value="ajax提交"  id="submitBtn" name="submitBtn"/>
 </div>
+
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+</button>
+
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Star
+</button>
+
 </body>
 </html>
 
