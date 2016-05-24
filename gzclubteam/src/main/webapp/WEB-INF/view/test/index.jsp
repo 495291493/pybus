@@ -119,14 +119,23 @@ transform: rotate(-360deg);
 	<input type="button" value="ajax提交"  id="submitBtn" name="submitBtn"/>
 </div>
 
-<button type="button" class="btn btn-default" aria-label="Left Align">
-  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-</button>
-
-<button type="button" class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Star
-</button>
-
+ <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+ 
+ <div style="padding:10px; background-color: gray;">
+    <i class="icon-search icon-white"></i>
+     <span class="icon-info-sign" aria-hidden="true" style="border:1px solid red;"></span> 
+ </div>
+<div class="btn-group">
+  <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> User</a>
+  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
+    <li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+    <li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+    <li class="divider"></li>
+    <li><a href="#"><i class="i"></i> Make admin</a></li>
+  </ul>
+</div>
 </body>
 </html>
 
