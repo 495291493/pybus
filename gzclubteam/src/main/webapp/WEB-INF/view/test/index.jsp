@@ -16,6 +16,40 @@
       $("#pro").ProgressBarWars({porcentage:100,color:"#8BC34A"});
   </script>
   
+  <div class="btn-toolbar">
+	  <div class="btn-group">
+	    <a class="btn" href="#"><i class="icon-align-left"></i></a>
+	    <a class="btn" href="#"><i class="icon-align-center"></i></a>
+	    <a class="btn" href="#"><i class="icon-align-right"></i></a>
+	    <a class="btn" href="#"><i class="icon-align-justify"></i></a>
+	  </div>
+</div>
+<p>
+  <button class="btn btn-large btn-primary" type="button">Large button</button>
+  <button class="btn btn-large" type="button">Large button</button>
+</p>
+<p>
+  <button class="btn btn-primary" type="button">Default button</button>
+  <button class="btn" type="button">Default button</button>
+</p>
+<p>
+  <button class="btn btn-small btn-primary" type="button">Small button</button>
+  <button class="btn btn-small" type="button">Small button</button>
+</p>
+<p>
+  <button class="btn btn-mini btn-primary" type="button">Mini button</button>
+  <button class="btn btn-mini" type="button">Mini button</button>
+</p>
+<div class="control-group">
+  <label class="control-label" for="inputIcon">Email address</label>
+  <div class="controls">
+    <div class="input-prepend">
+      <span class="add-on"><i class="icon-envelope"></i></span>
+      <input class="span2" id="inputIcon" type="text">
+    </div>
+  </div>
+</div>
+
   <div class="main">
   <div class="access_method">
     access：  <a href="http://localhost:8080/gzclubteam/test/index.action">http://localhost:8080/gzclubteam/test/index.action</a>
