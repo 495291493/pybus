@@ -5,9 +5,6 @@
 <script>var ctx = "${ctx}";</script>
 
 <!-- css引入 -->
-<link rel="stylesheet" type="text/css" href="${ctx }/css/bootstrap-theme.css?serno=105">
-<link rel="stylesheet" type="text/css" href="${ctx }/css/bootstrap-theme.min.css?serno=107">
-<link rel="stylesheet" type="text/css" href="${ctx }/css/bootstrap.css?serno=108">
 <link rel="stylesheet" type="text/css" href="${ctx }/css/bootstrap.min.css?serno=110">
 <link rel="stylesheet" type="text/css" href="${ctx }/css/main.css?serno=111">
 
